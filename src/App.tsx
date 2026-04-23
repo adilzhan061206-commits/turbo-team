@@ -1,13 +1,12 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Zap, ShieldCheck, Calendar, Clock, GraduationCap, Star, MapPin } from 'lucide-react';
+import { Zap, ShieldCheck, GraduationCap, Star, MapPin } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 const turboColor = "#C2A36D";
 const clickUrl = "https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3";
 const kairatAstanaUrl = "/astana.mp3"; 
 
-// ШРИФТ ҮЛКЕЙТІЛДІ (150px), СОҒАН САЙ LETTER_SIZE ӨЗГЕРТІЛДІ
 const LETTER_SIZE = 160; 
 
 const teamMembers = [
@@ -112,7 +111,6 @@ export default function App() {
   return (
     <div style={{ backgroundColor: '#02040a', minHeight: '100vh', width: '100vw', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: '"Inter", sans-serif', color: 'white', overflow: 'hidden', position: 'relative' }}>
       
-      {/* ПРЕМИУМ ФОН - ЕНДІ CREDITS БЕТІНДЕ ДЕ КӨРІНІП ТҰРАДЫ */}
       <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', zIndex: 0 }}>
         <div style={{ position: 'absolute', top: '50%', left: '50%', width: '150%', height: '150%', background: `conic-gradient(from 0deg at 50% 50%, transparent, ${turboColor}11, transparent)`, transform: 'translate(-50%, -50%)', animation: 'spin 20s linear infinite' }} />
         <div style={{ position: 'absolute', inset: 0, backgroundImage: `radial-gradient(${turboColor}33 1px, transparent 1px)`, backgroundSize: '30px 30px' }} />
